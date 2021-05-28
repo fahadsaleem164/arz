@@ -45,12 +45,13 @@ collections:
 
 
   - name: Who We Are
-    label: whoweare
+    label: Who We Are
     label_singular:  WHO We are
     folder: src/pages/posts/homepage/
     slug: "{{title}}"
     summary: '{{title}}'
     delete: false 
+    create: true
     description: >
       The description is a great place for tone setting, high level information, and editing
       guidelines for HOME PAGE.
@@ -62,12 +63,13 @@ collections:
   
 
   - name: Our Mission
-    label: ourmission
+    label: Our Mission
     label_singular:  Our Mission
     folder: src/pages/posts/homepage/
     slug: "{{title}}"
     summary: '{{title}}'
     delete: false 
+    create: true
     description: >
       The description is a great place for tone setting, high level information, and editing
       guidelines for HOME PAGE.
@@ -77,6 +79,26 @@ collections:
         - { label: 'image 1', name: 'image1', widget: 'image'}
         - { label: 'image 2', name: 'image2', widget: 'image' }
         - { label: 'Link', name: 'link', widget: 'string', hint: 'Link for Get Started' }
+
+
+  - name: Case Studies
+    label: Case Studies
+    label_singular:  Case Studies
+    folder: src/pages/posts/homepage/
+    slug: "{{title}}"
+    summary: '{{title}}'
+    delete: false 
+    create: true
+    description: >
+      The description is a great place for tone setting, high level information, and editing
+      guidelines for HOME PAGE.
+    fields:
+        - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'image 1', name: 'image1', widget: 'image'}
+      
+
+
+  
 
 
  
