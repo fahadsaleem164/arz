@@ -44,7 +44,7 @@ collections:
              - { label: 'Video', name: 'video', widget: 'file' }
 
 
-  - name: Who We Are
+  - name: WhoWeAre
     label: Who We Are
     label_singular:  WHO We are
     folder: src/pages/posts/whoWeAre/
@@ -62,7 +62,7 @@ collections:
         - { label: 'image 2', name: 'image2', widget: 'image' }
   
 
-  - name: Our Mission
+  - name: OurMission
     label: Our Mission
     label_singular:  Our Mission
     folder: src/pages/posts/ourMission/
@@ -81,7 +81,7 @@ collections:
         - { label: 'Link', name: 'link', widget: 'string', hint: 'Link for Get Started' }
 
 
-  - name: Case Studies
+  - name: CaseStudies
     label: Case Studies
     label_singular:  Case Studies
     folder: src/pages/posts/caseStudy/
