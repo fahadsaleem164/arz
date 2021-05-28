@@ -60,3 +60,21 @@ collections:
         - { label: 'image 1', name: 'image1', widget: 'image'}
         - { label: 'image 2', name: 'image2', widget: 'image' }
   
+
+  - name: Our Mission
+    label: ourmission
+    label_singular:  Our Mission
+    folder: src/pages/posts/homepage/
+    slug: "{{title}}"
+    summary: '{{title}}'
+    delete: false 
+    description: >
+      The description is a great place for tone setting, high level information, and editing
+      guidelines for HOME PAGE.
+    fields:
+        - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'Description', name: 'description', widget: 'text' }
+        - { label: 'image 1', name: 'image1', widget: 'image'}
+        - { label: 'image 2', name: 'image2', widget: 'image' }
+        - { label: 'Link', name: 'link', widget: 'string', hint: 'Link for Get Started' }
+  
