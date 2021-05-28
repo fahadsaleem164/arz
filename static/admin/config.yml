@@ -35,4 +35,11 @@ collections:
                     - { label: 'Title', name: 'title', widget: 'string' }
                     - { label: 'Description', name: 'description', widget: 'text', hint: 'Description will be here' }
                     - { label: 'image', name: 'image', widget: 'image', hint: 'Link for Get Started' }
+      - label: 'Why Choose Us'
+        name: 'Whychooseus'
+        widget: 'object'
+        fields:
+             - { label: 'Title', name: 'title', widget: 'string' }
+             - { label: 'Description', name: 'description', widget: 'text', hint: 'Link for Get Started' }
+             - { label: 'Video', name: 'video', widget: 'file', hint: 'Upload your vedeo' }
   
