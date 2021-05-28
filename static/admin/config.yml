@@ -9,13 +9,21 @@ public_folder: /assets
 collections:
   - name: homepage
     label: Home Page
-    label_singular: Slider Image
-    folder: src/pages/posts/blueEconomy/
+    label_singular: Home Page
+    folder: src/pages/posts/homeage/
     summary: '{{title}}'
     description: >
       The description is a great place for tone setting, high level information, and editing
-      guidelines for BlueEconomy.
+      guidelines for Home page.
     fields:
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
-      - { label: 'description', name: 'description', widget: 'string', hint: 'Description will be here' }
+      - { label: 'description', name: 'description', widget: 'markdown', hint: 'Description will be here' }
+      - { label: 'Link', name: 'link', widget: 'string', hint: 'Link for Get Started' }
+      - { label: 'image', name: 'image', widget: 'string', hint: 'Link for Get Started' }
+      - label: 'Our Services'
+        name: 'ourservices'
+        widget: 'object'
+        fields:
+             - { label: 'Title', name: 'title', widget: 'string' }
+             - { label: 'Link', name: 'link', widget: 'string', hint: 'Link for Get Started' }
   
