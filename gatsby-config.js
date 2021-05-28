@@ -11,6 +11,7 @@ module.exports = {
   //   FAST_REFRESH: true,
   // },
   plugins: [
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-sass`,
