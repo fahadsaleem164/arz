@@ -1,7 +1,7 @@
 backend:
   name: github
   # change repo to your git repository url
-  branch: main
+  branch: master
   repo: fahadsaleem164/arz
 media_folder: static/assets
 public_folder: /assets
@@ -18,30 +18,30 @@ collections:
       guidelines for Home page.
     fields:
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
-      - { label: 'description', name: 'text', widget: 'markdown', hint: 'Description will be here' }
-      - { label: 'Link', name: 'link', widget: 'string', hint: 'Link for Get Started' }
-      - { label: 'image', name: 'image', widget: 'image', hint: 'Link for Get Started' }
+      - { label: 'description', name: 'text', widget: 'text' }
+      - { label: 'Link', name: 'link', widget: 'string' }
+      - { label: 'image', name: 'image', widget: 'image' }
       - label: 'Our Services'
         name: 'ourservices'
         widget: 'object'
         fields:
              - { label: 'Title', name: 'title', widget: 'string' }
-             - { label: 'Link', name: 'link', widget: 'string', hint: 'Link for Get Started' }
-             - { label: 'Description', name: 'description', widget: 'text', hint: 'Link for Get Started' }
+             - { label: 'Link', name: 'link', widget: 'string',  }
+             - { label: 'Description', name: 'description', widget: 'text' }
              - label: 'Our Services'
                name: 'ourservices'
                widget: 'list'
                fields:
                     - { label: 'Title', name: 'title', widget: 'string' }
-                    - { label: 'Description', name: 'description', widget: 'text', hint: 'Description will be here' }
-                    - { label: 'image', name: 'image', widget: 'image', hint: 'Link for Get Started' }
+                    - { label: 'Description', name: 'description', widget: 'text'}
+                    - { label: 'image', name: 'image', widget: 'image' }
       - label: 'Why Choose Us'
         name: 'Whychooseus'
         widget: 'object'
         fields:
              - { label: 'Title', name: 'title', widget: 'string' }
-             - { label: 'Description', name: 'description', widget: 'text', hint: 'Link for Get Started' }
-             - { label: 'Video', name: 'video', widget: 'file', hint: 'Upload your vedeo' }
+             - { label: 'Description', name: 'description', widget: 'text' }
+             - { label: 'Video', name: 'video', widget: 'file' }
 
 
   - name: Who We Are
