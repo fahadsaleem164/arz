@@ -7,7 +7,7 @@ export default function ContentSectionOne(){
 return(
 <Content>
   <Container>
-    <Content.InnerBlock className="border-bottom">
+    <Content.InnerBlock className="border-bottom"  id='who-we-are'>
       <Row className="justify-content-center">
         {/* about-us Content */}
         <Col xs="12" className="col-lg-7 col-md-6 col-xs-10">

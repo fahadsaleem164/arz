@@ -7,8 +7,8 @@ import About from './style'
  
 export default function AboutSection({...rest}){
 return(
-<About backgroundColor="#F3F4F6" {...rest}>
-  <Container>
+<About backgroundColor="#F3F4F6" {...rest} id='why-choose-us'>
+  <Container >
     <Row className="align-items-center justify-content-center">
       <Col xs="12" className="col-xl-6 col-lg-7 col-md-10 order-2 order-xl-1">
         <About.Box mrXL="50px" mt="0" mt="30px" mtXL="0" pb="40px" pbLG="0">

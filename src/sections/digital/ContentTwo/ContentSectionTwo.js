@@ -5,7 +5,7 @@ import Content from './style'
  
 export default function ContentSectionTwo({...rest}){
 return(
-<Content {...rest}>
+<Content {...rest} id='our-mission'>
   <Container>
     <Row className="align-items-center justify-content-center">
       <Col xs="12" className="col-xl-6 col-lg-7 col-md-8 col-xs-9 order-2 order-lg-1">

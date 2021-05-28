@@ -248,7 +248,7 @@ const Menu = ({...rest}) => {
                             <Nav.Item className="main-nav-item">
                               <Link
                                 className="nav-link"
-                                to={`/${name}`}
+                                to={'#'+`${name}`}
                                 role="button"
                                 aria-expanded="false"
                               >

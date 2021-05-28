@@ -19,6 +19,35 @@ module.exports = {
         implementation: require("sass"),
       },
     },
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages1`,
+        path: `${__dirname}/src/pages/posts/ourMission`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages2`,
+        path: `${__dirname}/src/pages/posts/caseStudy`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages3`,
+        path: `${__dirname}/src/pages/posts/whoWeAre`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages3`,
+        path: `${__dirname}/src/pages/posts/homePage`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
@@ -32,5 +61,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-background-image`,
+    `gatsby-transformer-remark`
   ],
 }

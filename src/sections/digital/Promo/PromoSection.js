@@ -4,8 +4,8 @@ import { Link } from '~components'
  import Promo from "./style"
 export default function PromoSection(){
 return(
-<Promo>
-  <Container>
+<Promo id='contact-us'>
+  <Container >
     <Row className="justify-content-center">
       <Col className="col-xl-12">
         <Promo.ContentBox className="text-center">

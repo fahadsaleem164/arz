@@ -88,8 +88,8 @@ export default function PortfolioSection({...rest}){
       : setFilteredImages(portfolioData.filter(image => image.tagi.find((item) => item === tag)))
   }, [tag])
 return(
-<Portfolio {...rest}>
-  <Container>
+<Portfolio {...rest} id='case-studies'>
+  <Container id='case-studies'>
     <Row className="align-items-center justify-content-center">
       <Col xs="12" className="col-xl-7 col-lg-5 col-md-8 col-xs-9">
         <Portfolio.Box mbLG="45px" mb="10px">

@@ -6,7 +6,7 @@ import Service from "./style"
 import {Images} from "~data"
 export default function ServicesSection(){
 return(
-<Service>
+<Service id='what-we-do'>
   <Container>
     <Row>
       <Col xs="12" className="col-xl-5 col-lg-6 col-md-9 col-xs-10 order-2 order-lg-1">
