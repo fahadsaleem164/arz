@@ -51,7 +51,6 @@ collections:
     slug: "{{title}}"
     summary: '{{title}}'
     delete: false 
-    create: true
     description: >
       The description is a great place for tone setting, high level information, and editing
       guidelines for HOME PAGE.
@@ -69,7 +68,6 @@ collections:
     slug: "{{title}}"
     summary: '{{title}}'
     delete: false 
-    create: true
     description: >
       The description is a great place for tone setting, high level information, and editing
       guidelines for HOME PAGE.
