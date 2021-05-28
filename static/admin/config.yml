@@ -30,7 +30,7 @@ collections:
              - { label: 'Description', name: 'description', widget: 'text', hint: 'Link for Get Started' }
              - label: 'Our Services'
                name: 'ourservices'
-               widget: 'object'
+               widget: 'list'
                fields:
                     - { label: 'Title', name: 'title', widget: 'string' }
                     - { label: 'Description', name: 'description', widget: 'text', hint: 'Description will be here' }
