@@ -4,6 +4,9 @@ import { Col, Container, Row } from 'react-bootstrap'
 import Content from './style'
  
 export default function ContentSectionTwo({...rest}){
+  // console.log(rest)
+  const data =  rest.ourMission.edges[0].node.frontmatter
+
 return(
 <Content {...rest} id='our-mission'>
   <Container>
@@ -12,22 +15,25 @@ return(
         {/* Section Title */}
         <Content.Box>
           <Content.Subtitle fontColor="#fd346e" as="h4">Our Mission</Content.Subtitle>
-          <Content.Title as="h2">Create recognition for businesses online</Content.Title>
-          <Content.Text>Business advisory service advises current and future<br className="d-none d-md-block" /> businesses prospects of a
+          <Content.Title as="h2">{data.title}</Content.Title>
+          <Content.Text>{data.description}<br className="d-none d-md-block" /> businesses prospects of a
             client, with the aim of<br className="d-none d-md-block" /> advancing their business or company. </Content.Text>
-          <Content.Button pl="15px" pr="15px" sizeY="56px" sizeX="168px" className="btn" href="#" mt="40px">Get started</Content.Button>
+            <a href={data.link}>
+          <Content.Button pl="15px" pr="15px" sizeY="56px" sizeX="168px" className="btn" mt="40px">Contact Us</Content.Button></a>
         </Content.Box>
       </Col>
       <Col xs="12" className="col-xl-6 col-lg-5 col-sm-8 col-xs-10 order-1 order-lg-2">
         <Content.Images>
           <Content.ImageOne>
           <Content.ImageOneInner>
-            <Img src="../../../assets/image/home-digital-agency/1.jpg" alt="Content" layout="fullWidth" placeholder="blurred"/>
+            {/* <Img src="../../../assets/image/home-digital-agency/1.jpg" alt="Content" layout="fullWidth" placeholder="blurred"/> */}
+            <img src={data.image1} />
           </Content.ImageOneInner>
           </Content.ImageOne>
           <Content.ImageTwo>
           <Content.ImageTwoInner>
-            <Img src="../../../assets/image/home-digital-agency/2.jpg" alt="Content" layout="fullWidth" placeholder="blurred"/>
+            {/* <Img src="../../../assets/image/home-digital-agency/2.jpg" alt="Content" layout="fullWidth" placeholder="blurred"/> */}
+            <img src={data.image2} />
           </Content.ImageTwoInner>
           </Content.ImageTwo>
         </Content.Images>

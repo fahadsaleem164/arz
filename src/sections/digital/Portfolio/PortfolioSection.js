@@ -76,8 +76,12 @@ const portfolioData = [
     )
   }
 
-export default function PortfolioSection({...rest}){
-    
+export default function PortfolioSection({...rest})
+{
+  const data =  rest.caseStudy.edges[0].node.frontmatter
+
+  console.log(data)
+
   const [tag, setTag] = React.useState("all")
   const [filteredImages, setFilteredImages] = React.useState([])
 
@@ -88,22 +92,23 @@ export default function PortfolioSection({...rest}){
       : setFilteredImages(portfolioData.filter(image => image.tagi.find((item) => item === tag)))
   }, [tag])
 return(
+  
 <Portfolio {...rest} id='case-studies'>
   <Container id='case-studies'>
     <Row className="align-items-center justify-content-center">
       <Col xs="12" className="col-xl-7 col-lg-5 col-md-8 col-xs-9">
         <Portfolio.Box mbLG="45px" mb="10px">
-          <Portfolio.Subtitle as="h4" fontColor="#fd346e" mb="13px">Portfolio</Portfolio.Subtitle>
-          <Portfolio.Title as="h2">Works we are proud of</Portfolio.Title>
+          <Portfolio.Subtitle as="h4" fontColor="#fd346e" mb="13px">Case Studies</Portfolio.Subtitle>
+          <Portfolio.Title as="h2">{data.title}</Portfolio.Title>
         </Portfolio.Box>
       </Col>
       <Col xs="12" className="col-xl-5 col-lg-7 col-md-8">
         <Portfolio.Nav className="mb-5 mb-lg-0">
-          <FilterButton className="is-checked" name="all" tagActive={tag} handleSetTag={setTag}>All</FilterButton>
-          <FilterButton name="work" tagActive={tag} handleSetTag={setTag}>Design</FilterButton>
-          <FilterButton name="development" tagActive={tag} handleSetTag={setTag}> Development</FilterButton>
-          <FilterButton name="marketing" tagActive={tag} handleSetTag={setTag}> Marketing</FilterButton>
-          <FilterButton name="seo" tagActive={tag} handleSetTag={setTag}>SEO</FilterButton>
+          <FilterButton className="is-checked" name="all" tagActive={tag} handleSetTag={setTag}></FilterButton>
+          <FilterButton name="work" tagActive={tag} handleSetTag={setTag}></FilterButton>
+          <FilterButton name="development" tagActive={tag} handleSetTag={setTag}> </FilterButton>
+          <FilterButton name="marketing" tagActive={tag} handleSetTag={setTag}> </FilterButton>
+          <FilterButton name="seo" tagActive={tag} handleSetTag={setTag}></FilterButton>
         </Portfolio.Nav>
       </Col>
     </Row>
@@ -111,15 +116,18 @@ return(
       <Col xs="12" className="col-md-12 col-xs-10">
             <Row className="justify-content-start">
             <AnimatePresence>
-            {filteredImages.slice(0,3).map(
-                    ({ image, titleSmall, title,tagi,id }, index) => {
-                      return (
-                <ItemCol className={`col-lg-4 col-md-6 col-sm-10 ${tagi.find((item) => item === tag) | tag === "all" ?  "is-animated" :""} `}  key={index + "pm-c4"}>
-                    <PortfolioCard image={image} title="Agency Brand guide & Development" text="UX and UI, Design, Development" mt="25px"/>
-                </ItemCol>
-                )
-                }
-            )}
+
+                {data.Case_Studies.slice(0,3).map(
+                        ({ image,title,description,tagi,id }, index) => {
+                          return (
+                          <ItemCol className={`col-lg-4 col-md-6 col-sm-10`}>
+                              <PortfolioCard image={image} title={title} text={description} mt="25px"/>
+                          </ItemCol>
+                   
+                    )
+                    }
+                )}
+
                 </AnimatePresence>
             </Row>
       </Col>

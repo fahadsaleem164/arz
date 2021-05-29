@@ -23,16 +23,18 @@ const digital = () => (
 
 
 <StaticQuery query={digitalPageData} render={data=>{
+
+  console.log(data.caseStudy)
    
   return (
     <PageWrapper headerConfig={header}>
-       <HeroSection data={data}/>
+       {/* <HeroSection data={digitalPageData}/> */}
        <ServicesSection/>
        <AboutSection/>
-        <ContentSectionOne data={data}/>
-      <ContentSectionTwo/>
+        <ContentSectionOne whoWeAre={data.whoWeAre}/>
+        <ContentSectionTwo ourMission={data.ourMission}/>
         {/* <TeamSection/> */}
-       <PortfolioSection/>
+       <PortfolioSection caseStudy={data.caseStudy}/>
        <PromoSection/>
        <FooterSix/>
     </PageWrapper>
@@ -41,8 +43,8 @@ const digital = () => (
 )
 
 export const digitalPageData = graphql`
-  query digitalPageDatas{
-    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "posts/whoWeAre/"}} 
+  {
+    whoWeAre :  allMarkdownRemark(filter: {fileAbsolutePath: {regex: "posts/whoWeAre/"}} 
     ) {
       edges {
         node {
@@ -58,6 +60,52 @@ export const digitalPageData = graphql`
         }
       }
     }
+
+    ourMission: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "posts/ourMission/"}}
+    )  {
+      edges {
+        node {
+          id
+          frontmatter {
+            
+            title
+            description
+            image1
+            image2
+            link
+            
+          }
+        }
+      }
+    }
+
+
+    caseStudy: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "posts/caseStudy/"}}
+    )  {
+      edges {
+        node {
+          frontmatter {
+            title
+            link
+            image2
+            image1
+            description
+            Case_Studies {
+              title
+              link
+              image
+              description
+            }
+          }
+        }
+      }
+      
+    }
+
+
+    
+
+
   }`
 
 export default digital;

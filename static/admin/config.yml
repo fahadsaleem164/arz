@@ -44,6 +44,24 @@ collections:
              - { label: 'Video', name: 'video', widget: 'file' }
 
 
+  - name: WhyChooseUs
+    label: Why Choose Us
+    label_singular:  Why Choose Us
+    folder: src/pages/posts/whyUseUs/
+    slug: "{{title}}"
+    summary: '{{title}}'
+    delete: false 
+    create: true
+    description: >
+      The description is a great place for tone setting, high level information, and editing
+      guidelines for HOME PAGE.
+    fields:
+        - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'Description', name: 'description', widget: 'text' }
+        - { label: 'Video', name: 'video', widget: 'file'}
+       
+
+
   - name: WhoWeAre
     label: Who We Are
     label_singular:  WHO We are

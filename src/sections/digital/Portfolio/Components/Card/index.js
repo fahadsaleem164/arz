@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from '~components'
  import Card from "./style"
 export default function PortfolioCard({to,image,title,text,...rest}){
+
+  console.log(image)
 return(
 <Card as={Link} to={ to ? to : "/" } {...rest}>
       <img className="w-100" src={image} alt="portfolio" />
