@@ -4,7 +4,8 @@ import { Link } from '~components'
 import { Images } from '~data'
 import Hero from './style'
  
-export default function HeroSection({data}){
+export default function HeroSection({mainSection}){
+  console.log(mainSection)
  
   // const displayData = data.allMarkdownRemark.edges[0].node.frontmatter
   // console.log(displayData)

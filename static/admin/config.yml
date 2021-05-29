@@ -10,7 +10,7 @@ collections:
   - name: Main Section
     label: Main Section
     label_singular: Main Section
-    folder: src/pages/mainSection//
+    folder: src/pages/posts/mainSection/
     summary: '{{title}}'
     create: true
     description: >

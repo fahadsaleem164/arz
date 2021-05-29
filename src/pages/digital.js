@@ -24,11 +24,11 @@ const digital = () => (
 
 <StaticQuery query={digitalPageData} render={data=>{
 
-  console.log(data.whatWeDo)
+  console.log(data.mainSection)
    
   return (
     <PageWrapper headerConfig={header}>
-       <HeroSection data={digitalPageData}/>
+       <HeroSection mainSection={mainSection}/>
        <ServicesSection whatWeDo={data.whatWeDo}/>
        <AboutSection whyChooseUs={data.whyChooseUs} />
         <ContentSectionOne whoWeAre={data.whoWeAre}/>
@@ -134,6 +134,21 @@ export const digitalPageData = graphql`
               link
               image
             }
+           
+          }
+        }
+      }
+    }
+
+
+    mainSection: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "posts/mainSection/"}}
+    )  {
+      edges {
+        node {
+          frontmatter {
+            title
+            link
+            description
            
           }
         }
