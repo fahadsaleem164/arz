@@ -1,7 +1,5 @@
 ---
-title: Create your Digital Presence, Increase your business growth
-text: |-
-  Get a website to be found on the first page of Google to avoid
-  missing out on potential visitors and sales.
+title: Stop waiting. Grow your bus
+text: Use AI to improve you business analysis with AZK AI.
 link: https://fastland-gatsby.netlify.app/digital
 ---
