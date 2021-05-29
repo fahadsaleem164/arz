@@ -58,6 +58,7 @@ module.exports = {
         // `${__dirname}/src/assets/image`
       },
     },
+    
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-background-image`,

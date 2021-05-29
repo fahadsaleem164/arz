@@ -4,7 +4,10 @@ import { Link } from '~components'
 import { Images } from '~data'
 import Hero from './style'
  
-export default function HeroSection(){
+export default function HeroSection({data}){
+ 
+  const displayData = data.allMarkdownRemark.edges[0].node.frontmatter
+  console.log(displayData)
 return(
 <Hero style={{backgroundImage: `url(${Images.DigiTalagency.heroImg})`}}>
   <Container>
@@ -12,10 +15,10 @@ return(
       <Col className="col-xl-9">
         <Hero.Content className="text-center">
           <Hero.Icon><i className="fa fa-bell" /></Hero.Icon>
-          <Hero.Title as="h1" fontColor="#fff">Create your Digital Presence, Increase your business growth</Hero.Title>
-          <Hero.Text fontColor="#fff">Get a website to be found on the first page of Google to avoid<br className="d-none d-xs-block" /> missing out on potential visitors
+          <Hero.Title as="h1" fontColor="#fff">{displayData.title}</Hero.Title>
+          <Hero.Text fontColor="#fff">{displayData.description}<br className="d-none d-xs-block" />
             and sales. </Hero.Text>
-          <Hero.Button as={Link} to="/">Get Started</Hero.Button>
+          {/* <Hero.Button as={Link} to="/"><a href={}>Get Started</a></Hero.Button> */}
         </Hero.Content>
       </Col>
     </Row>

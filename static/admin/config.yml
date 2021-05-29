@@ -10,7 +10,7 @@ collections:
   - name: homepage
     label: Home Page
     label_singular: Home Page
-    folder: src/pages/posts/homeage/
+    folder: src/pages/posts/homepage/
     summary: '{{title}}'
     create: true
     description: >

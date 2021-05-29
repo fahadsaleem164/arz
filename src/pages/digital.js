@@ -23,16 +23,13 @@ const digital = () => (
 
 
 <StaticQuery query={digitalPageData} render={data=>{
-
-  console.log(data);
-  
    
   return (
     <PageWrapper headerConfig={header}>
-       <HeroSection/>
+       <HeroSection data={data}/>
        <ServicesSection/>
        <AboutSection/>
-        <ContentSectionOne/>
+        <ContentSectionOne data={data}/>
       <ContentSectionTwo/>
         {/* <TeamSection/> */}
        <PortfolioSection/>
@@ -53,6 +50,8 @@ export const digitalPageData = graphql`
           frontmatter {
             title
             description
+            image1
+            image2
           }
           
           excerpt
