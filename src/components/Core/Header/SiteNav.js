@@ -27,7 +27,7 @@ const SiteNavbar = ({buttonBlock,darkLogo,customLogo,defaultLogo}) => {
           className="hamburgur"
         />
         <Menu/>
-        {buttonBlock}
+        {/* {buttonBlock} */}
       </Navbar>
     </>
   )

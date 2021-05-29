@@ -12,7 +12,7 @@ collections:
     label_singular: Main Section
     folder: src/pages/posts/mainSection/
     summary: '{{title}}'
-    create: true
+    delete: false
     description: >
       The description is a great place for tone setting, high level information, and editing
       guidelines for Home page.
@@ -27,13 +27,12 @@ collections:
 
 
   - name: ourServices
-    label: Our Services
+    label: What We Do
     label_singular:  Services
     folder: src/pages/posts/ourServices/
     slug: "{{title}}"
     summary: '{{title}}'
     delete: false 
-    create: true
     description: >
       The description is a great place for tone setting, high level information, and editing
       guidelines for Services.
@@ -59,7 +58,6 @@ collections:
     slug: "{{title}}"
     summary: '{{title}}'
     delete: false 
-    create: true
     description: >
       The description is a great place for tone setting, high level information, and editing
       guidelines for HOME PAGE.
@@ -114,7 +112,6 @@ collections:
     slug: "{{title}}"
     summary: '{{title}}'
     delete: false 
-    create: true
     description: >
       The description is a great place for tone setting, high level information, and editing
       guidelines for HOME PAGE.
