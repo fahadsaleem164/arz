@@ -34,14 +34,12 @@ collections:
     fields:
         - { label: 'Title', name: 'title', widget: 'string' }
         - { label: 'Description', name: 'description', widget: 'text' }
-        - { label: 'Link', name: 'link', widget: 'string'}
         - label: 'Our Services'
           name: 'ourservices'
           widget: 'list'
           fields:
              - { label: 'Title', name: 'title', widget: 'string' }
              - { label: 'Description', name: 'description', widget: 'text' }
-             - { label: 'Link', name: 'link', widget: 'string' }
              - { label: 'Image', name: 'image', widget: 'image' }
         
 

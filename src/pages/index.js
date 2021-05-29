@@ -123,12 +123,10 @@ export const digitalPageData = graphql`
         node {
           frontmatter {
             title
-            link
             description
             ourservices {
               title
               description
-              link
               image
             }
            
