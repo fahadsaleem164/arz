@@ -24,13 +24,13 @@ const digital = () => (
 
 <StaticQuery query={digitalPageData} render={data=>{
 
-  console.log(data.caseStudy)
+  console.log(data.whyChooseUs)
    
   return (
     <PageWrapper headerConfig={header}>
        {/* <HeroSection data={digitalPageData}/> */}
        <ServicesSection/>
-       <AboutSection/>
+       <AboutSection whyChooseUs={data.whyChooseUs} />
         <ContentSectionOne whoWeAre={data.whoWeAre}/>
         <ContentSectionTwo ourMission={data.ourMission}/>
         {/* <TeamSection/> */}
@@ -79,6 +79,21 @@ export const digitalPageData = graphql`
       }
     }
 
+    whyChooseUs: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "posts/whyUseUs/"}}
+    )  {
+      edges {
+        node {
+          id
+          frontmatter {
+            
+            title
+            description
+            video  
+          }
+        }
+      }
+    }
+
 
     caseStudy: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "posts/caseStudy/"}}
     )  {
@@ -99,8 +114,12 @@ export const digitalPageData = graphql`
           }
         }
       }
-      
     }
+
+
+   
+
+
 
 
     

@@ -80,7 +80,6 @@ export default function PortfolioSection({...rest})
 {
   const data =  rest.caseStudy.edges[0].node.frontmatter
 
-  console.log(data)
 
   const [tag, setTag] = React.useState("all")
   const [filteredImages, setFilteredImages] = React.useState([])

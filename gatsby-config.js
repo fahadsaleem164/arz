@@ -48,6 +48,13 @@ module.exports = {
         path: `${__dirname}/src/pages/posts/homepage`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages4`,
+        path: `${__dirname}/src/pages/posts/whyUseUs`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {

@@ -6,6 +6,16 @@ import CounterBlock from './Components/CounterBlock'
 import About from './style'
  
 export default function AboutSection({...rest}){
+
+  // var str = 'https://www.youtube.com/watch?v=PN9QOIEQXv4'
+  // var abc =  str.split('v=')
+
+  const data =  rest.whyChooseUs.edges[0].node.frontmatter
+  
+  var idOfVideo = data.video.split('v=')
+  
+  console.log(idOfVideo) 
+
 return(
 <About backgroundColor="#F3F4F6" {...rest} id='why-choose-us'>
   <Container >
@@ -14,10 +24,8 @@ return(
         <About.Box mrXL="50px" mt="0" mt="30px" mtXL="0" pb="40px" pbLG="0">
           <About.ContentTextBlock className="text-center text-xl-end">
             <About.Subtitle as="h6" fontColor="#fd346e">Why Choose Us</About.Subtitle>
-            <About.Title as="h2" pb="35px" mb="40px">We are in the business of<br className="d-none d-sm-block d-lg-none d-xxl-block" /> helping you grow yours</About.Title>
-            <About.Text>Stay up to date with Google company news and products.<br className="d-none d-sm-block d-xl-none d-xxl-block" /> Discover stories about our culture,
-              philosophy, and how Google<br className="d-none d-md-block d-xl-none d-xxl-block" /> technology is
-              impacting others.</About.Text>
+            <About.Title as="h2" pb="35px" mb="40px">{data.title}</About.Title>
+            <About.Text><br className="d-none d-sm-block d-xl-none d-xxl-block" />{data.description}</About.Text>
           </About.ContentTextBlock>
           <CounterBlock mt="50px"/>
         </About.Box>
@@ -25,7 +33,7 @@ return(
       <Col xs="12" className="col-xl-6 col-lg-6 col-md-8 col-sm-9 order-1 order-xl-2">
         <About.Image>
         <Img className="w-100" src="../../../assets/image/home-digital-agency/about-videos-img.png" alt="content" layout="fullWidth" placeholder="blurred"/>
-          <Video id="LWZ7iytIA6k" className="video-btn"> <i className="fa fa-play" /> </Video>
+          <Video id='' className="video-btn"> <i className="fa fa-play" /> </Video>
         </About.Image>
       </Col>
     </Row>
