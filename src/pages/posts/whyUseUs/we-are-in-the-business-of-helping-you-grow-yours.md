@@ -4,5 +4,5 @@ description: |-
   Stay up to date with Google company news and products.
   Discover stories about our culture, philosophy, and how Google
   technology is impacting others.
-video: https://youtu.be/LWZ7iytIA6k
+video: https://www.youtube.com/watch?v=YTJg8q9Q940
 ---
