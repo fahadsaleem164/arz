@@ -14,7 +14,7 @@ export default function AboutSection({...rest}){
   
   var idOfVideo = data.video.split('v=')
   
-  console.log(idOfVideo) 
+  // console.log(idOfVideo[1]) 
 
 return(
 <About backgroundColor="#F3F4F6" {...rest} id='why-choose-us'>
@@ -33,7 +33,7 @@ return(
       <Col xs="12" className="col-xl-6 col-lg-6 col-md-8 col-sm-9 order-1 order-xl-2">
         <About.Image>
         <Img className="w-100" src="../../../assets/image/home-digital-agency/about-videos-img.png" alt="content" layout="fullWidth" placeholder="blurred"/>
-          <Video id='' className="video-btn"> <i className="fa fa-play" /> </Video>
+          <Video id={idOfVideo[1]} className="video-btn"> <i className="fa fa-play" /> </Video>
         </About.Image>
       </Col>
     </Row>

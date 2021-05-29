@@ -59,8 +59,10 @@ collections:
         - { label: 'Title', name: 'title', widget: 'string' }
         - { label: 'Description', name: 'description', widget: 'text' }
         - { label: 'Video', name: 'video', widget: 'file'}
+        - { label: 'Projects Done', name: 'projects_done', widget: 'string'}
+        - { label: 'Conversion Rate', name: 'conservation_rate', widget: 'string'}
+        - { label: 'Returning Happy customer', name: 'return_happy_customer', widget: 'string'}
        
-
 
   - name: WhoWeAre
     label: Who We Are
