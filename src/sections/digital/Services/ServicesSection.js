@@ -4,24 +4,39 @@ import ServiceCard from './Components/Card'
 import Service from "./style"
  
 import {Images} from "~data"
-export default function ServicesSection(){
+
+export default function ServicesSection({whatWeDo}){
+
+  const data = whatWeDo.edges[0].node.frontmatter
+  console.log(data.ourservices)
+
+
 return(
 <Service id='what-we-do'>
   <Container>
     <Row>
       <Col xs="12" className="col-xl-5 col-lg-6 col-md-9 col-xs-10 order-2 order-lg-1">
-          <Service.Subtitle fontColor="#fd346e" as="h4" mb="22px">Our Services</Service.Subtitle>
-          <Service.Title as="h2"  mb="40px">Get better conversion with user-friendly and mobile optimized websites</Service.Title>
-          <Service.Button pl="15px" pr="15px" sizeY="56px" sizeX="168px" className="btn" href="#">Learn More</Service.Button>
+          <Service.Subtitle fontColor="#fd346e" as="h4" mb="22px">What We Do</Service.Subtitle>
+          <Service.Title as="h2"  mb="40px">{data.title}</Service.Title>
+          <a href={data.link}>
+          <Service.Button pl="15px" pr="15px" sizeY="56px" sizeX="168px" className="btn">Learn More</Service.Button>
+          </a>
       </Col>
       <Col xs="12" className="col-xxl-6 offset-xxl-1 col-xl-7 col-lg-6 col-md-11 order-1 order-lg-2">
         <Service.Box mlXL="35px" mb="20px" mbLG="0px">
-            <Service.Text mb="40px">If you don’t have a website or can’t be found on the first
-            page of Google<br className="d-none d-md-block d-lg-none d-xl-block" /> then you are missing out on potential visitors and sales.
+            <Service.Text mb="40px">
+              {data.description}
             </Service.Text>
-            <ServiceCard image={Images.DigiTalagency.servicesIcon1} title="Website Design & Development" text="Refresh old out dated website or bring your business online with your first website." mb="25px"/>
-            <ServiceCard image={Images.DigiTalagency.servicesIcon2} title="Search Engine Optimisation (SEO)" text="Start bringing new visitors to your website with an SEO campaign!" mb="25px"/>
-            <ServiceCard image={Images.DigiTalagency.servicesIcon3} title="Google Ads Management (PPC)" text="Start bringing new visitors to your website with an SEO campaign!" mb="25px"/>
+
+            {data.ourservices.map((tag,index) => {
+              
+             return(
+              
+                
+            <ServiceCard image={tag.image} title={tag.title} text={tag.description} mb="25px"/>
+         
+             )})}
+       
         </Service.Box>
       </Col>
     </Row>

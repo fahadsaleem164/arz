@@ -7,10 +7,10 @@ media_folder: static/assets
 public_folder: /assets
 
 collections:
-  - name: homepage
-    label: Home Page
-    label_singular: Home Page
-    folder: src/pages/posts/homepage/
+  - name: Main Section
+    label: Main Section
+    label_singular: Main Section
+    folder: src/pages/mainSection//
     summary: '{{title}}'
     create: true
     description: >
@@ -20,28 +20,8 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
       - { label: 'description', name: 'text', widget: 'text' }
       - { label: 'Link', name: 'link', widget: 'string' }
-      - { label: 'image', name: 'image', widget: 'image' }
-      - label: 'Our Services'
-        name: 'ourservices'
-        widget: 'object'
-        fields:
-             - { label: 'Title', name: 'title', widget: 'string' }
-             - { label: 'Link', name: 'link', widget: 'string',  }
-             - { label: 'Description', name: 'description', widget: 'text' }
-             - label: 'Our Services'
-               name: 'ourservices'
-               widget: 'list'
-               fields:
-                    - { label: 'Title', name: 'title', widget: 'string' }
-                    - { label: 'Description', name: 'description', widget: 'text'}
-                    - { label: 'image', name: 'image', widget: 'image' }
-      - label: 'Why Choose Us'
-        name: 'Whychooseus'
-        widget: 'object'
-        fields:
-             - { label: 'Title', name: 'title', widget: 'string' }
-             - { label: 'Description', name: 'description', widget: 'text' }
-             - { label: 'Video', name: 'video', widget: 'file' }
+      
+       
 
 
 

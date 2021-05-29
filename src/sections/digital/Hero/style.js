@@ -24,7 +24,7 @@ const Hero = styled(Box)`
         height: 100%;
         left: 0;
         top: 0;
-        background: linear-gradient(261.26deg, rgba(253, 52, 110, 0.96) 14.9%, #b81c5c 43.58%, #0abfbc 89.94%);
+        /* background: linear-gradient(261.26deg, rgba(253, 52, 110, 0.96) 14.9%, #b81c5c 43.58%, #0abfbc 89.94%); */
         opacity: 0.7;
         position: absolute;
         z-index: -1;

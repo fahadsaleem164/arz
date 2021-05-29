@@ -6,8 +6,8 @@ import Hero from './style'
  
 export default function HeroSection({data}){
  
-  const displayData = data.allMarkdownRemark.edges[0].node.frontmatter
-  console.log(displayData)
+  // const displayData = data.allMarkdownRemark.edges[0].node.frontmatter
+  // console.log(displayData)
 return(
 <Hero style={{backgroundImage: `url(${Images.DigiTalagency.heroImg})`}}>
   <Container>
@@ -15,8 +15,8 @@ return(
       <Col className="col-xl-9">
         <Hero.Content className="text-center">
           <Hero.Icon><i className="fa fa-bell" /></Hero.Icon>
-          <Hero.Title as="h1" fontColor="#fff">{displayData.title}</Hero.Title>
-          <Hero.Text fontColor="#fff">{displayData.description}<br className="d-none d-xs-block" />
+          <Hero.Title as="h1" fontColor="#fff">title</Hero.Title>
+          <Hero.Text fontColor="#fff">description<br className="d-none d-xs-block" />
             and sales. </Hero.Text>
           {/* <Hero.Button as={Link} to="/"><a href={}>Get Started</a></Hero.Button> */}
         </Hero.Content>
