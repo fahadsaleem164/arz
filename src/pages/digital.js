@@ -89,6 +89,9 @@ export const digitalPageData = graphql`
             title
             description
             video  
+            projects_done
+            conservation_rate
+            return_happy_customer
           }
         }
       }

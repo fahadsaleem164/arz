@@ -27,7 +27,7 @@ return(
             <About.Title as="h2" pb="35px" mb="40px">{data.title}</About.Title>
             <About.Text><br className="d-none d-sm-block d-xl-none d-xxl-block" />{data.description}</About.Text>
           </About.ContentTextBlock>
-          <CounterBlock mt="50px"/>
+          <CounterBlock mt="50px" data={data} />
         </About.Box>
       </Col>
       <Col xs="12" className="col-xl-6 col-lg-6 col-md-8 col-sm-9 order-1 order-xl-2">
