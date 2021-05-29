@@ -28,7 +28,7 @@ const digital = () => (
    
   return (
     <PageWrapper headerConfig={header}>
-       <HeroSection mainSection={mainSection}/>
+       <HeroSection mainSection={data.mainSection} />
        <ServicesSection whatWeDo={data.whatWeDo}/>
        <AboutSection whyChooseUs={data.whyChooseUs} />
         <ContentSectionOne whoWeAre={data.whoWeAre}/>
@@ -148,12 +148,12 @@ export const digitalPageData = graphql`
           frontmatter {
             title
             link
-            description
-           
+            text
           }
         }
       }
     }
+
 
 
     
