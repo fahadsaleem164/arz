@@ -72,7 +72,6 @@ export const digitalPageData = graphql`
             description
             image1
             image2
-            link
             
           }
         }
@@ -104,13 +103,11 @@ export const digitalPageData = graphql`
         node {
           frontmatter {
             title
-            link
             image2
             image1
             description
             Case_Studies {
               title
-              link
               image
               description
             }
@@ -147,7 +144,6 @@ export const digitalPageData = graphql`
         node {
           frontmatter {
             title
-            link
             text
           }
         }

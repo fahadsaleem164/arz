@@ -19,7 +19,6 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
       - { label: 'description', name: 'text', widget: 'text' }
-      - { label: 'Link', name: 'link', widget: 'string' }
       
        
   - name: ourServices
@@ -98,7 +97,6 @@ collections:
         - { label: 'Description', name: 'description', widget: 'text' }
         - { label: 'image 1', name: 'image1', widget: 'image'}
         - { label: 'image 2', name: 'image2', widget: 'image' }
-        - { label: 'Link', name: 'link', widget: 'string', hint: 'Link for Get Started' }
 
 
   - name: CaseStudies
@@ -122,7 +120,6 @@ collections:
              - { label: 'Image', name: 'image', widget: 'image' }
              - { label: 'Title', name: 'title', widget: 'string', hint: 'Link for Get Started' }
              - { label: 'Description', name: 'description', widget: 'text', hint: 'Link for Get Started' }
-             - { label: 'Link', name: 'link', widget: 'string', hint: 'Link for Get Started' }
       
 
 
