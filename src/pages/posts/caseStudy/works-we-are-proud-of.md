@@ -9,7 +9,7 @@ Case Studies:
     title: title 2
     description: dsecription
     link: https://elated-snyder-6dc101.netlify.app/digital
-  - image: /assets/portfolio-img-1-c7ecc548d75a30e15e8f6f6497149911.png
+  - image: /assets/content-l7-2.webp
     title: title3
     description: description
     link: https://elated-snyder-6dc101.netlify.app
