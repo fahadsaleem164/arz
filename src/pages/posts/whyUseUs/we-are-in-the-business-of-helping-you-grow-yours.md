@@ -5,4 +5,7 @@ description: |-
   Discover stories about our culture, philosophy, and how Google
   technology is impacting others.
 video: https://www.youtube.com/watch?v=YTJg8q9Q940
+projects_done: "600"
+conservation_rate: "95"
+return_happy_customer: "500"
 ---
