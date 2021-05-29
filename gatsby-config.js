@@ -55,6 +55,13 @@ module.exports = {
         path: `${__dirname}/src/pages/posts/whyUseUs`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages5`,
+        path: `${__dirname}/src/pages/posts/ourServices`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {

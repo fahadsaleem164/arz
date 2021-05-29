@@ -47,7 +47,7 @@ collections:
 
 
   - name: ourServices
-    label: Services
+    label: Our Services
     label_singular:  Services
     folder: src/pages/posts/ourServices/
     slug: "{{title}}"
@@ -61,10 +61,10 @@ collections:
         - { label: 'Title', name: 'title', widget: 'string' }
         - { label: 'Description', name: 'description', widget: 'text' }
         - { label: 'Link', name: 'link', widget: 'string'}
-        - label: 'ourServices'
-        name: 'ourservices'
-        widget: 'list'
-        fields:
+        - label: 'Our Services'
+          name: 'ourservices'
+          widget: 'list'
+          fields:
              - { label: 'Title', name: 'title', widget: 'string' }
              - { label: 'Description', name: 'description', widget: 'text' }
              - { label: 'Link', name: 'link', widget: 'string' }
