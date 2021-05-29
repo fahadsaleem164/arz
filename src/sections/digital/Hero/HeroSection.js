@@ -19,8 +19,8 @@ return(
           <Hero.Title as="h1" fontColor="#fff">{data.title}</Hero.Title>
           <Hero.Text fontColor="#fff">
             {data.text}
-        </Hero.Text><a href={data.link}>
-          <Hero.Button as={Link} to="/">Contact Us</Hero.Button></a>
+            </Hero.Text>
+          <Hero.Button as={Link}  href='#contact-us'>Contact Us</Hero.Button>
         </Hero.Content>
       </Col>
     </Row>
