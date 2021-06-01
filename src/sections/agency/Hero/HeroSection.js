@@ -4,7 +4,10 @@ import Video from '~components/VideoModal'
 import { Images } from '~data'
  import Hero from "./style"
 export default function HeroSection({mainSection}){
+  console.log(mainSection.edges)
+
   const data = mainSection.edges[0].node.frontmatter
+
 return(
 <Hero backgroundImage={Images.agency.heroImg} backgroundOverlay={Images.agency.heroImgOverlay}>
   <Container>
