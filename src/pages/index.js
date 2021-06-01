@@ -1,6 +1,7 @@
 import React from "react";
 import { PageWrapper } from "~components/Core";
-import HeroSection from '~sections/digital/Hero'
+// import HeroSection from '~sections/digital/Hero'
+import HeroSection from '~sections/agency/Hero'
 import ServicesSection from '~sections/digital/Services'
 import AboutSection from '~sections/digital/About'
 import ContentSectionOne from '~sections/digital/ContentOne'

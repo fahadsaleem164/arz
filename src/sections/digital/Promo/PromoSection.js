@@ -9,16 +9,16 @@ return(
 <Promo id='contact-us'>
   <Container >
  
-    <Row className="justify-content-center">
-      <Col className="col-xl-12">
+    {/* <Row className="justify-content-center">
+      <Col className="col-xl-12"> */}
         <Promo.ContentBox className="text-center">
   
           
             <ContactSection></ContactSection>
         
         </Promo.ContentBox>
-      </Col>
-    </Row>
+      {/* </Col>
+    </Row> */}
   </Container>
 </Promo>
 

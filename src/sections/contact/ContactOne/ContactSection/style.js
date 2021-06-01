@@ -8,17 +8,17 @@ import {
 
 const Contact = styled(Box)
 `
-    padding-top: 50px;
-    padding-bottom: 36px;
-    border-top: 1px solid rgba(38, 39, 41, 0.1);
+    // padding-top: 50px;
+    // padding-bottom: 36px;
+    // border-top: 1px solid rgba(38, 39, 41, 0.1);
     @media (min-width:768px) {
-        padding-top: 70px;
-        padding-bottom: 55px;
+        // padding-top: 70px;
+        // padding-bottom: 55px;
     }
 
     @media (min-width:992px) {
-        padding-top: 110px;
-        padding-bottom: 100px;
+        // padding-top: 110px;
+        // padding-bottom: 100px;
     }
 
 `

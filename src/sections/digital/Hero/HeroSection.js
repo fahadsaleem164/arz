@@ -5,7 +5,7 @@ import { Images } from '~data'
 import Hero from './style'
  
 export default function HeroSection({mainSection}){
-  console.log(mainSection)
+
   const data = mainSection.edges[0].node.frontmatter
 
 
