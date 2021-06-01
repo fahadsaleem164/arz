@@ -1,5 +1,7 @@
-import LogoBlack from "~image/logo/logo-black.png";
-import LogoWhite from "~image/logo/logo-white.png";
+// import LogoBlack from "~image/logo/logo-black.png";
+// import LogoWhite from "~image/logo/logo-white.png";
+import LogoBlack from "~image/logo/logo-black.svg";
+import LogoWhite from "~image/logo/logo-white.svg";
 import counDownImage from "~image/mixed/pattern-img-1.png";
 import l2BrandLogoLine1 from "~image/brand-logo/brand-line-1.png";
 import l2BrandLogoLine2 from "~image/brand-logo/brand-line-2.png";

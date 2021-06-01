@@ -1,7 +1,9 @@
 import React from "react"
 import { Navbar } from "react-bootstrap"
-import siteBrandDark from "~image/logo/logo-black.png"
-import siteBrandLight from "~image/logo/logo-white.png"
+// import siteBrandDark from "~image/logo/logo-black.png"
+// import siteBrandLight from "~image/logo/logo-white.png"
+import siteBrandDark from "~image/logo/logo-black.svg"
+import siteBrandLight from "~image/logo/logo-white.svg"
 import Menu from "./Menu"
 const SiteNavbar = ({buttonBlock,darkLogo,customLogo,defaultLogo}) => {
 
