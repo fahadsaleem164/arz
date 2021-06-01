@@ -25,7 +25,7 @@ return(
 
                         <div className="form-floating">
                           <input className="form-control" placeholder="Leave a comment here" id="floatinginput" name='email' required='required' />
-                          <input type="hidden" name="form-name" value="arzpk-contact"></input>
+                          <input type="hidden" name="form-name" value="contact"></input>
                           <label htmlFor="floatinginput">Your Email</label>
                         </div>
                       </Col>
