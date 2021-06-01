@@ -8,17 +8,17 @@ export default function PromoSection(){
 return(
 <Promo id='contact-us'>
   <Container >
-  <ContactSection></ContactSection>
-    {/* <Row className="justify-content-center">
+ 
+    <Row className="justify-content-center">
       <Col className="col-xl-12">
         <Promo.ContentBox className="text-center">
-          <Promo.Box>
-            <Promo.Title as="h2" fontColor="#fff" mb="25px">Contact<br className="d-none d-lg-block" /></Promo.Title>
-           
-          </Promo.Box>
+  
+          
+            <ContactSection></ContactSection>
+        
         </Promo.ContentBox>
       </Col>
-    </Row> */}
+    </Row>
   </Container>
 </Promo>
 
