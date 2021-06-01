@@ -69,6 +69,13 @@ module.exports = {
         path: `${__dirname}/src/pages/posts/mainSection`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages6`,
+        path: `${__dirname}/src/assets/`,
+      },
+    },
     
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
