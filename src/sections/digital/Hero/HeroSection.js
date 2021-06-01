@@ -6,7 +6,7 @@ import Hero from './style'
  
 export default function HeroSection({mainSection}){
 
-  const data = mainSection.edges[0].node.frontmatter
+
 
 
 return(
@@ -16,9 +16,9 @@ return(
       <Col className="col-xl-9">
         <Hero.Content className="text-center">
           <Hero.Icon><i className="fa fa-bell" /></Hero.Icon>
-          <Hero.Title as="h1" fontColor="#fff">{data.title}</Hero.Title>
+          {/* <Hero.Title as="h1" fontColor="#fff">{data.title}</Hero.Title> */}
           <Hero.Text fontColor="#fff">
-            {data.text}
+            {/* {data.text} */}
             </Hero.Text>
           <Hero.Button as={Link}  href='#contact-us'>Contact Us</Hero.Button>
         </Hero.Content>
