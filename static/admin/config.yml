@@ -124,8 +124,6 @@ collections:
     label: Contact Details
     label_singular:  Contact Details
     folder: src/pages/posts/contactDetail/
-    slug: "{{title}}"
-    summary: '{{title}}'
     create: true
     delete: false 
     description: >
