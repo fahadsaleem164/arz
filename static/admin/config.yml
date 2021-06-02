@@ -125,7 +125,7 @@ collections:
     label_singular:  Contact Details
     folder: src/pages/posts/contactDetail/
     slug: "contactDetails"
-    summary: 'contact details'
+    summary: 'Contact details'
     create: true
     delete: false 
     description: >
