@@ -25,7 +25,7 @@ const digital = () => (
 
 <StaticQuery query={digitalPageData} render={data=>{
 
-  console.log(data.mainSection)
+  // console.log(data.contactDetails)
    
   return (
     <PageWrapper headerConfig={header}>
@@ -37,7 +37,7 @@ const digital = () => (
         {/* <TeamSection/> */}
        <PortfolioSection caseStudy={data.caseStudy}/>
        <PromoSection/>
-       <FooterSix/>
+       <FooterSix contactDetails={data.contactDetails}/>
     </PageWrapper>
   )
 }}/>
@@ -144,6 +144,20 @@ export const digitalPageData = graphql`
           frontmatter {
             title
             text
+          }
+        }
+      }
+    }
+
+
+    contactDetails: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "posts/contactDetail/"}}
+    )  {
+      edges {
+        node {
+          frontmatter {
+            address
+            phone
+            email
           }
         }
       }
