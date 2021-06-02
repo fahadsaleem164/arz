@@ -5,5 +5,5 @@ address: |-
   Grapevine Nashville, Tx 76051
 phone: +99 (0) 101 0000 888
 email: info@medcartel.com
-slogan: TRANSFORMING  YOUR BUSINESS WITH AI
+slogan: Transforming Your Business With AI
 ---
