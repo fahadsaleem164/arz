@@ -21,9 +21,10 @@ return(
                         <img src={Images.FooterSix.LogoBlack} alt="logo" />
                     </Link>
                 </Footer.Box>
-                {/* <Footer.Text mb="36px">
-                    We’re the digital agency to create<br className="d-none d-xl-block" /> your digital presence for better<br className="d-none d-xl-block" /> conversion and sales.
-                </Footer.Text> */}
+                <Footer.Text mb="36px">
+                    {data.slogan}
+                    {/* We’re the digital agency to create<br className="d-none d-xl-block" /> your digital presence for better<br className="d-none d-xl-block" /> conversion and sales. */}
+                </Footer.Text>
                     {/* <Footer.SocialShare>
                         <Footer.SocialShareItem>
                             <a href="#">
@@ -75,29 +76,29 @@ return(
                     </Footer.Widgets>
                 </Col>
                 <Col xs="12" className="col-md-4 col-xs-6">
-                <Footer.Widgets>
-                    <Footer.Title>AZK AI</Footer.Title>
-                    <Footer.List>
-                        <Footer.ListItems>
-                            <a href="#what-we-do">What We Do</a>
-                        </Footer.ListItems>
-                        <Footer.ListItems>
-                            <a href="#why-choose-us">Why Choose Us</a>
-                        </Footer.ListItems>
-                        <Footer.ListItems>
-                            <a href="#who-we-are">Who We Are</a>
-                        </Footer.ListItems>
-                        <Footer.ListItems>
-                            <a href="#our-mission">Our Mission</a>
-                        </Footer.ListItems>
-                        <Footer.ListItems>
-                            <a href="#case-studies">Case Studies</a>
-                        </Footer.ListItems>
-                        <Footer.ListItems>
-                            <a href="#contact-us">Contact Us</a>
-                        </Footer.ListItems>
-                    </Footer.List>
-                </Footer.Widgets>
+                    <Footer.Widgets>
+                        <Footer.Title>AZK AI</Footer.Title>
+                        <Footer.List>
+                            <Footer.ListItems>
+                                <a href="#what-we-do">What We Do</a>
+                            </Footer.ListItems>
+                            <Footer.ListItems>
+                                <a href="#why-choose-us">Why Choose Us</a>
+                            </Footer.ListItems>
+                            <Footer.ListItems>
+                                <a href="#who-we-are">Who We Are</a>
+                            </Footer.ListItems>
+                            <Footer.ListItems>
+                                <a href="#our-mission">Our Mission</a>
+                            </Footer.ListItems>
+                            <Footer.ListItems>
+                                <a href="#case-studies">Case Studies</a>
+                            </Footer.ListItems>
+                            <Footer.ListItems>
+                                <a href="#contact-us">Contact Us</a>
+                            </Footer.ListItems>
+                        </Footer.List>
+                    </Footer.Widgets>
                 </Col>
                 <Col xs="12" className="col-md-4 col-xs-9">
                 {/* <Footer.Widgets>

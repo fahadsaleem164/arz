@@ -158,6 +158,7 @@ export const digitalPageData = graphql`
             address
             phone
             email
+            slogan
           }
         }
       }
