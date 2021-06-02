@@ -126,7 +126,6 @@ collections:
     folder: src/pages/posts/contactDetail/
     slug: "contactDetails"
     summary: 'Contact details'
-    create: true
     delete: false 
     description: >
       The field is related to contact details for footer.
